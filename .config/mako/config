@@ -1,0 +1,9 @@
+font=Lexend Deca 10
+format=<b>%a ⏵</b> %s\n%b
+background-color=#181616ff
+text-color=#c4b28aff
+border-color=#a292a3ff
+border-radius=2
+icons=0
+icon-path=/home/negapmahs/.icons/Kanagawa
+layer=overlay
