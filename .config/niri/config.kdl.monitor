@@ -1,0 +1,20 @@
+// --------------------------------------------------------
+// Output
+// --------------------------------------------------------
+
+// https://yalter.github.io/niri/Configuration:-Outputs
+output "DP-1" {
+    // Set the resolution and refresh rate.
+    mode "2560x1440@180.001"
+
+    // Set the scale of the monitor.
+    scale 1
+
+    // Set the position of the output in the global coordinate space.
+    position x=0 y=0
+
+    // Sets a hot corner that opens the overview menu (Mod+O).
+    hot-corners {
+        off
+    }
+}
