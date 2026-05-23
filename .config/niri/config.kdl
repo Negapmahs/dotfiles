@@ -180,6 +180,7 @@ window-rule {
     match app-id="foobar2000"
     match app-id="nicotine+"
     match app-id="anki"
+    match app-id="darktable"
 
     open-maximized true
 }
