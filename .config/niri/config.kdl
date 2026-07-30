@@ -181,6 +181,7 @@ window-rule {
     match app-id="nicotine+"
     match app-id="anki"
     match app-id="darktable"
+    match app-id="siril"
 
     open-maximized true
 }
