@@ -12,6 +12,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # source global shell alias files
 [ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
+[ -f "$XDG_CONFIG_HOME/shell/alias2" ] && source "$XDG_CONFIG_HOME/shell/alias2"
 
 # some default options
 export EDITOR="nano"
