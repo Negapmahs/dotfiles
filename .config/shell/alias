@@ -15,4 +15,3 @@ lsbc="lsblk | bat -l conf -p" \
 pkhax="WINEPREFIX=~/.local/share/wineprefix/tool wine ~/desktop/schtugh/tool/pokemon/PKHeX/PKHaX.exe" \
 man="batman" \
 sysup="sudo pacman -Syu && yay -Syu && flatpak upgrade && pacman -Qdtq | sudo pacman -Rns -" \
-mcrcon="mcrcon -H 127.0.0.1 -P 3738 -p VLCjD2VnQ2Mdigo55UebmXwrQvDEabty -t" \
