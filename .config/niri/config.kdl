@@ -5,6 +5,7 @@
 // --------------------------------------------------------
 
 spawn-at-startup "mako"
+spawn-at-startup "/usr/lib/hyprpolkitagent"
 
 spawn-sh-at-startup "nicotine -s"
 spawn-sh-at-startup "swaybg -i ~/media/pic/wallpaper/Mond.png"

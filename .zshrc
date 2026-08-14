@@ -25,7 +25,7 @@ bindkey "^[[3~" delete-char
 # || PLUGINS ||
 
 # load modules
-autoload -U compinit; compinit
+autoload -U compinit; compinit -d $XDG_CACHE_HOME/zsh/zcompdump
 
 # source fzf-tab
 source /usr/share/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
@@ -51,7 +51,7 @@ source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.
 # history
 HISTSIZE=1000000
 SAVEHIST=1000000
-HISTFILE="$XDG_CACHE_HOME/zsh_history" # move histfile to cache
+HISTFILE="$XDG_CACHE_HOME/zsh/zsh_history" # move histfile to cache
 
 # opts
 setopt append_history inc_append_history share_history hist_ignore_all_dups hist_ignore_space # better history
