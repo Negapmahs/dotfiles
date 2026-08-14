@@ -5,8 +5,6 @@
 // --------------------------------------------------------
 
 spawn-at-startup "mako"
-spawn-at-startup "easyeffects"
-spawn-at-startup "dms" "run"
 
 spawn-sh-at-startup "nicotine -s"
 spawn-sh-at-startup "swaybg -i ~/media/pic/wallpaper/Mond.png"
@@ -294,37 +292,21 @@ binds {
     Mod+Down  hotkey-overlay-title="Focus column down" { focus-window-down; }
     Mod+Up    hotkey-overlay-title="Focus column up" { focus-window-up; }
     Mod+Right hotkey-overlay-title="Focus column right" { focus-column-right; }
-    Mod+H     hotkey-overlay-title="Focus column left" { focus-column-left; }
-    Mod+J     hotkey-overlay-title="Focus column down" { focus-window-down; }
-    Mod+K     hotkey-overlay-title="Focus column up" { focus-window-up; }
-    Mod+L     hotkey-overlay-title="Focus column right" { focus-column-right; }
 
     Mod+Ctrl+Left  hotkey-overlay-title="Move column left" { move-column-left; }
     Mod+Ctrl+Down  hotkey-overlay-title="Move column down" { move-window-down; }
     Mod+Ctrl+Up    hotkey-overlay-title="Move column up" { move-window-up; }
     Mod+Ctrl+Right hotkey-overlay-title="Move column right" { move-column-right; }
-    Mod+Ctrl+H     hotkey-overlay-title="Move column left" { move-column-left; }
-    Mod+Ctrl+J     hotkey-overlay-title="Move column down" { move-window-down; }
-    Mod+Ctrl+K     hotkey-overlay-title="Move column up" { move-window-up; }
-    Mod+Ctrl+L     hotkey-overlay-title="Move column right" { move-column-right; }
 
     Mod+Home           hotkey-overlay-title="Focus first column" { focus-column-first; }
     Mod+End            hotkey-overlay-title="Focus last column" { focus-column-last; }
     Mod+Ctrl+Home      hotkey-overlay-title="Move column to first" { move-column-to-first; }
     Mod+Ctrl+End       hotkey-overlay-title="Move column to last" { move-column-to-last; }
-    Mod+G              hotkey-overlay-title="Focus first column" { focus-column-first; }
-    Mod+SemiColon      hotkey-overlay-title="Focus last column" { focus-column-last; }
-    Mod+Ctrl+G         hotkey-overlay-title="Move column to first" { move-column-to-first; }
-    Mod+Ctrl+SemiColon hotkey-overlay-title="Move column to last" { move-column-to-last; }
 
     Mod+WheelScrollDown       hotkey-overlay-title="Focus column right" { focus-column-right; }
     Mod+WheelScrollUp         hotkey-overlay-title="Focus column left" { focus-column-left; }
     Mod+Ctrl+WheelScrollDown  hotkey-overlay-title="Move column right" { move-column-right; }
     Mod+Ctrl+WheelScrollUp    hotkey-overlay-title="Move column left" { move-column-left; }
-    Mod+WheelScrollRight      hotkey-overlay-title="Focus column right" { focus-column-right; }
-    Mod+WheelScrollLeft       hotkey-overlay-title="Focus column left" { focus-column-left; }
-    Mod+Ctrl+WheelScrollRight hotkey-overlay-title="Move column right" { move-column-right; }
-    Mod+Ctrl+WheelScrollLeft  hotkey-overlay-title="Move column left" { move-column-left; }
 
     // Workspaces.
     Mod+Shift+WheelScrollDown      cooldown-ms=150 hotkey-overlay-title="Focus next workspace" { focus-workspace-down; }
@@ -338,12 +320,6 @@ binds {
     Mod+Ctrl+Page_Up    hotkey-overlay-title="Move column to previous workspace" { move-column-to-workspace-up; }
     Mod+Shift+Page_Down hotkey-overlay-title="Move workspace down" { move-workspace-down; }
     Mod+Shift+Page_Up   hotkey-overlay-title="Move workspace up" { move-workspace-up; }
-    Mod+D               hotkey-overlay-title="Focus next workspace" { focus-workspace-down; }
-    Mod+U               hotkey-overlay-title="Focus previous workspace" { focus-workspace-up; }
-    Mod+Ctrl+D          hotkey-overlay-title="Move column to next workspace" { move-column-to-workspace-down; }
-    Mod+Ctrl+U          hotkey-overlay-title="Move column to previous workspace" { move-column-to-workspace-up; }
-    Mod+Shift+D         hotkey-overlay-title="Move workspace down" { move-workspace-down; }
-    Mod+Shift+U         hotkey-overlay-title="Move workspace up" { move-workspace-up; }
 
     Mod+1 hotkey-overlay-title="Focus workspace (1-9)" { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }

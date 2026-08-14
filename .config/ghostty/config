@@ -52,6 +52,3 @@ clipboard-write = allow
 shell-integration = zsh
 confirm-close-surface = false
 linux-cgroup = always
-# background-opacity=0.75
-#window-height=45
-#window-width=135
