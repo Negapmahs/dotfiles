@@ -28,10 +28,10 @@ bindkey "^[[3~" delete-char
 autoload -U compinit; compinit -d $XDG_CACHE_HOME/zsh/zcompdump
 
 # source fzf-tab
-source /usr/share/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
+source $XDG_CONFIG_HOME/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 
 # source pure
-fpath+=(/usr/share/zsh/plugins/pure)
+fpath+=($XDG_CONFIG_HOME/zsh/plugins/pure)
 
 # autoload of promptinit needs to occur AFTER setting fpath
 autoload -U promptinit; promptinit
@@ -45,7 +45,7 @@ zstyle :prompt:pure:git:dirty detailed yes
 prompt pure
 
 # source fast-syntax-highlighting
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $XDG_CONFIG_HOME/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # || ZSH OPTIONS ||
 # history
@@ -80,3 +80,6 @@ fi
 export FZF_DEFAULT_OPTS="--style minimal --layout reverse --info inline-right --preview 'bat -p --color always {}'"
 export FZF_CTRL_R_OPTS="--style minimal --layout reverse --info inline-right --no-sort --no-preview"
 export FZF_ALT_C_OPTS="--style minimal --layout reverse --info inline-right --no-preview"
+
+# clean up home folder
+export LESSHISTFILE=$XDG_CACHE_HOME/lesshist
