@@ -3,7 +3,7 @@
 # || SHELL SETUP ||
 
 # add directories to PATH
-export PATH=$PATH:/home/negapmahs/.local/bin
+export PATH=/home/negapmahs/.local/bin:$PATH
 
 # follow XDG base dir specification
 export XDG_CONFIG_HOME="$HOME/.config"
