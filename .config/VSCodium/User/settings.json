@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Kanagawa Dragon",
+    
+    // Treat LaTeX package (.sty) and class (.cls) files as LaTeX files.
+    "files.associations": {
+        "*.sty": "latex",
+        "*.cls": "latex"
+    },
+
+    // LaTeX Workshop configuration
+    // Disables auto-rebuilding after build failure
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    // Organise the LaTeX working directory by sequestering output files into their own dir
+    "latex-workshop.latex.outDir": "%DIR%/out_dir",
+    // Fix clean up auxilliary files not that output directory is not working directory
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    // Open PDFs in a new tab
+    "latex-workshop.view.pdf.viewer": "tab",
+    // Match SyncTeX behaviour from Overleaf, where double-clicking it pdf jumps to .tex file location
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    // Disable equation previews in editor
+    "latex-workshop.hover.preview.cursor.enabled": false,
+    "latex-workshop.hover.preview.enabled": false,
+}

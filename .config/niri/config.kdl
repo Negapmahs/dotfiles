@@ -5,7 +5,7 @@
 // --------------------------------------------------------
 
 spawn-at-startup "mako"
-spawn-at-startup "/usr/lib/hyprpolkitagent"
+spawn-at-startup "/home/negapmahs/.local/bin/fuzzel-polkit-agent"
 
 spawn-sh-at-startup "nicotine -s"
 spawn-sh-at-startup "swaybg -i ~/media/pic/wallpaper/Mond.png"
@@ -167,7 +167,7 @@ window-rule {
 
 window-rule {
     match app-id=r#"^dot\.floating\.ghostty$"#
-    match app-id=r#"^dot\.floating\.nemo$"#
+    match app-id=r#"^dot\.floating\.thunar$"#
     match app-id="xdg-desktop-portal-gtk"
 
     open-floating true
@@ -251,8 +251,8 @@ binds {
 
     Mod+Return       hotkey-overlay-title="Terminal" { spawn "ghostty"; }
     Mod+Shift+Return hotkey-overlay-title="Terminal (floating)" { spawn "ghostty" "--class=dot.floating.ghostty"; }
-    Mod+E            hotkey-overlay-title="File manager" { spawn "nemo"; }
-    Mod+Shift+E      hotkey-overlay-title="File manager (floating)" { spawn "nemo" "--name=dot.floating.nemo"; }
+    Mod+E            hotkey-overlay-title="File manager" { spawn "thunar"; }
+    Mod+Shift+E      hotkey-overlay-title="File manager (floating)" { spawn "thunar" "--name=dot.floating.thunar"; }
     Mod+Alt+P        hotkey-overlay-title="Passwords" { spawn "keepassxc"; }
     Mod+B            hotkey-overlay-title="Browser" { spawn "firefox"; }
 
