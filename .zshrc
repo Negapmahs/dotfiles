@@ -28,10 +28,10 @@ bindkey "^[[3~" delete-char
 autoload -U compinit; compinit -d $XDG_CACHE_HOME/zsh/zcompdump
 
 # source fzf-tab
-source $XDG_CONFIG_HOME/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
+source $XDG_DATA_HOME/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 
 # source pure
-fpath+=($XDG_CONFIG_HOME/zsh/plugins/pure)
+fpath+=($XDG_DATA_HOME/zsh/plugins/pure)
 
 # autoload of promptinit needs to occur AFTER setting fpath
 autoload -U promptinit; promptinit
@@ -45,7 +45,7 @@ zstyle :prompt:pure:git:dirty detailed yes
 prompt pure
 
 # source fast-syntax-highlighting
-source $XDG_CONFIG_HOME/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $XDG_DATA_HOME/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # || ZSH OPTIONS ||
 # history
