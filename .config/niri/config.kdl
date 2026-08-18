@@ -104,7 +104,7 @@ layout {
 // Disable client-side decorations.
 prefer-no-csd
 
-screenshot-path "~/media/pic/screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
+screenshot-path "~/media/pic/screenshot/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
