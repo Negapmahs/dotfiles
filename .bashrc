@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export HISTFILE="$HOME/.cache/bash/history"
+export HISTFILE="$HOME/.local/state/bash/history"
 source "$HOME/.config/bash/profile"
 source "$HOME/.config/bash/logout"
 

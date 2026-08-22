@@ -9,8 +9,10 @@ export PATH=/home/negapmahs/.local/bin:$PATH
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_BIN_HOME="$HOME/.local/bin"
 
-# source global shell alias files
+# source shell alias files
 [ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
 [ -f "$XDG_CONFIG_HOME/shell/alias2" ] && source "$XDG_CONFIG_HOME/shell/alias2"
 
@@ -25,7 +27,7 @@ bindkey "^[[3~" delete-char
 # || PLUGINS ||
 
 # load modules
-autoload -U compinit; compinit -d $XDG_CACHE_HOME/zsh/zcompdump
+autoload -U compinit; compinit -d $XDG_CACHE_HOME/zsh/zcompcache
 
 # source fzf-tab
 source $XDG_DATA_HOME/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
@@ -51,7 +53,7 @@ source $XDG_DATA_HOME/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlight
 # history
 HISTSIZE=1000000
 SAVEHIST=1000000
-HISTFILE="$XDG_CACHE_HOME/zsh/zsh_history" # move histfile to cache
+HISTFILE="$XDG_STATE_HOME/zsh/history" # move histfile to cache
 
 # opts
 setopt append_history inc_append_history share_history hist_ignore_all_dups hist_ignore_space # better history
@@ -83,3 +85,4 @@ export FZF_ALT_C_OPTS="--style minimal --layout reverse --info inline-right --no
 
 # clean up home folder
 export LESSHISTFILE=$XDG_CACHE_HOME/lesshist
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java

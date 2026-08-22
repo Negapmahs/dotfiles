@@ -21,4 +21,5 @@
     // Disable equation previews in editor
     "latex-workshop.hover.preview.cursor.enabled": false,
     "latex-workshop.hover.preview.enabled": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
 }
