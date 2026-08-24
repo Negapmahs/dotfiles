@@ -86,3 +86,5 @@ export FZF_ALT_C_OPTS="--style minimal --layout reverse --info inline-right --no
 # clean up home folder
 export LESSHISTFILE=$XDG_CACHE_HOME/lesshist
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+
+export QT_QPA_PLATFORMTHEME=gtk3
