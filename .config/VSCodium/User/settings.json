@@ -22,4 +22,5 @@
     "latex-workshop.hover.preview.cursor.enabled": false,
     "latex-workshop.hover.preview.enabled": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.wrappingIndent": "indent",
 }

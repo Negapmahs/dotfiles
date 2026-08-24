@@ -5,5 +5,5 @@ text-color=#c4b28aff
 border-color=#a292a3ff
 border-radius=2
 icons=1
-icon-path=/home/negapmahs/.icons/Kanagawa
+icon-path=/home/negapmahs/.local/share/Kanagawa-Papirus
 layer=overlay
