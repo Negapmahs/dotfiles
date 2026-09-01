@@ -5,7 +5,8 @@
 // --------------------------------------------------------
 
 spawn-at-startup "mako"
-spawn-at-startup "/home/negapmahs/.local/bin/fuzzel-polkit-agent"
+spawn-at-startup "~/.local/bin/fuzzel-polkit-agent"
+spawn-at-startup "waybar"
 
 spawn-sh-at-startup "nicotine -s"
 spawn-sh-at-startup "swaybg -i ~/media/pic/wallpaper/Mond.png"
@@ -48,6 +49,9 @@ input {
 
     // Focuses windows and outputs automatically when moving the mouse into them.
     focus-follows-mouse
+
+    mod-key "Super"
+    mod-key-nested "Alt"
 }
 
 // --------------------------------------------------------
@@ -104,7 +108,7 @@ layout {
 // Disable client-side decorations.
 prefer-no-csd
 
-screenshot-path "~/media/pic/screenshot/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
+screenshot-path "~/media/pic/screenshot/Screenshot_%Y-%m-%d_%H-%M-%S.png"
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
@@ -160,7 +164,6 @@ window-rule {
 // Various window rules
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    match app-id=r#"org.quickshell$"#
 
     open-floating true
 }
@@ -186,17 +189,11 @@ window-rule {
 }
 
 window-rule {
-    match app-id="minecraft"
+    match app-id="mpv"
 
     open-fullscreen true
 }
 
-window-rule {
-    match app-id=r#"^KeePassXC$"#
-    match app-id="launcher"
-
-    block-out-from "screencast"
-}
 
 window-rule {
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#

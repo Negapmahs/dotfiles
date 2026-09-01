@@ -1,0 +1,46 @@
+* {
+    font-family: "Lexend Deca", "Font Awesome 7 Free", "Noto Sans CJK", sans-serif;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-left {
+    background-color: #181616;
+    border-radius: 20px;
+    margin: 4px 4px 0 4px;
+    padding: 0 10px 0 10px;
+    border: 2px solid;
+    border-color: #a292a3;
+}
+
+.modules-right {
+    background-color: #181616;
+    border-radius: 20px;
+    margin: 4px 4px 0 4px;
+    padding: 0 10px 0 10px;
+    border: 2px solid;
+    border-color: #a292a3;
+}
+
+.modules-center {
+    background-color: #181616;
+    border-radius: 20px;
+    margin: 4px 4px 0 4px;
+    padding: 0 10px 0 10px;
+    border: 2px solid;
+    border-color: #a292a3;
+}
+
+#workspaces,
+#taskbar,
+#clock,
+#mpris,
+#tray,
+#cpu,
+#memory,
+#network,
+#wireplumber {
+    padding: 0 5px 0 5px;
+}

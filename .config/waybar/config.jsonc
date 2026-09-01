@@ -1,0 +1,92 @@
+// -*- "mode: jsonc -*-
+{
+    "layer": "bottom",
+    "position": "top",
+
+    "modules-left": [
+        "niri/workspaces",
+        "wlr/taskbar"
+    ],
+
+    "modules-center": [
+        "clock",
+        "mpris"
+    ],
+
+    "modules-right": [
+        "tray",
+        "cpu",
+        "memory",
+        "network",
+        "wireplumber#sink",
+        "wireplumber#source"
+    ],
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
+
+    "wlr/taskbar": {
+        "on-click": "activate",
+        "app_ids-mapping": {
+            "foobar2000.exe": "foobar2000"
+        }
+    },
+
+    "clock": {
+        "interval": 60,
+        "format": "{:%a %Y-%m-%d %H:%M}",
+        "tooltip": false
+    },
+
+    "mpris": {
+        "player": "beefweb",
+        "format": "{status_icon} {dynamic}",
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸"
+        },
+        "interval": 0,
+        "artist-len": 20,
+        "album-len": 20,
+        "title-len": 20
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "cpu": {
+        "format": "{usage}% "
+    },
+
+
+    "memory": {
+        "interval": 10,
+        "format": "{percentage}% | {swapPercentage}% "
+    },
+
+    "network": {
+        "format-wifi": "{signalStrength}% ",
+        "format-ethernet": "",
+        "format-disconnected": "",
+        "tooltip": false
+    },
+
+    "wireplumber#sink": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": ["", "", ""],
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "wireplumber#source": {
+        "node-type": "Audio/Source",
+        "format": "{volume}% ",
+        "format-muted": "",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+    }
+}

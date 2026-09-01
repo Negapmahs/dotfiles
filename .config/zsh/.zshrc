@@ -20,8 +20,8 @@ export XDG_BIN_HOME="$HOME/.local/bin"
 export EDITOR=nano
 
 # fix keybinds
-bindkey "^[[1~" beginning-of-line
-bindkey "^[[4~" end-of-line
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
 
 # || PLUGINS ||
@@ -67,16 +67,6 @@ setopt interactive_comments # allow comments in shell
 # fzf
 eval "$(fzf --zsh)"
 
-# tmux
-#  check if
-#  1.tmux exists on the system
-#  2.we're in an interactive shell, and
-#  3.tmux doesn't try to run within itself
-#  then, create a session named main OR attach an existing session named main
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux new-session -A -s main
-fi
-
 # || OTHER OPTIONS ||
 # fzf configuration
 export FZF_DEFAULT_OPTS="--style minimal --layout reverse --info inline-right --preview 'bat -p --color always {}'"
@@ -86,5 +76,3 @@ export FZF_ALT_C_OPTS="--style minimal --layout reverse --info inline-right --no
 # clean up home folder
 export LESSHISTFILE=$XDG_CACHE_HOME/lesshist
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
-
-export QT_QPA_PLATFORMTHEME=gtk3
