@@ -10,7 +10,8 @@
 
     "modules-center": [
         "clock",
-        "mpris"
+        "mpris",
+        "mpris#position"
     ],
 
     "modules-right": [
@@ -45,15 +46,21 @@
 
     "mpris": {
         "player": "beefweb",
-        "format": "{status_icon} {dynamic}",
+        "format": "{status_icon} {title} - {artist} - {album}",
         "status-icons": {
             "playing": "▶",
             "paused": "⏸"
         },
-        "interval": 0,
-        "artist-len": 20,
-        "album-len": 20,
-        "title-len": 20
+        "interval": 1,
+        "artist-len": 40,
+        "album-len": 40,
+        "title-len": 40
+    },
+
+    "mpris#position": {
+        "player": "beefweb",
+        "format": "[{position}/{length}]",
+        "interval": 1
     },
 
     "tray": {

@@ -44,3 +44,7 @@ window#waybar {
 #wireplumber {
     padding: 0 5px 0 5px;
 }
+
+#mpris.position {
+    font-family: "Mononoki Nerd Font Mono", monospace;
+}

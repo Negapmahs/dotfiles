@@ -9,7 +9,7 @@ spawn-at-startup "~/.local/bin/fuzzel-polkit-agent"
 spawn-at-startup "waybar"
 
 spawn-sh-at-startup "nicotine -s"
-spawn-sh-at-startup "swaybg -i ~/media/pic/wallpaper/Mond.png"
+spawn-sh-at-startup "swaybg -i ~/media/pic/wallpaper/Mond.jpeg"
 
 // --------------------------------------------------------
 // Input

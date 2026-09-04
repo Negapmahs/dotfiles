@@ -1,5 +1,8 @@
 {
     "workbench.colorTheme": "Kanagawa Dragon",
+
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.wrappingIndent": "indent",
     
     // Treat LaTeX package (.sty) and class (.cls) files as LaTeX files.
     "files.associations": {
@@ -21,6 +24,4 @@
     // Disable equation previews in editor
     "latex-workshop.hover.preview.cursor.enabled": false,
     "latex-workshop.hover.preview.enabled": false,
-    "editor.unicodeHighlight.nonBasicASCII": false,
-    "editor.wrappingIndent": "indent",
 }

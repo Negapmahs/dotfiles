@@ -2,9 +2,6 @@
 
 # || SHELL SETUP ||
 
-# add directories to PATH
-export PATH=/home/negapmahs/.local/bin:$PATH
-
 # follow XDG base dir specification
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -12,12 +9,12 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_BIN_HOME="$HOME/.local/bin"
 
-# source shell alias files
-[ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
-[ -f "$XDG_CONFIG_HOME/shell/alias2" ] && source "$XDG_CONFIG_HOME/shell/alias2"
+# prefix XDG_BIN_HOME to PATH
+export PATH=$XDG_BIN_HOME:$PATH
 
-# some default options
-export EDITOR=nano
+# source shell alias files
+[ -f $XDG_CONFIG_HOME/shell/alias ] && source $XDG_CONFIG_HOME/shell/alias
+[ -f $XDG_CONFIG_HOME/shell/alias2 ] && source $XDG_CONFIG_HOME/shell/alias2
 
 # fix keybinds
 bindkey "^[[H" beginning-of-line
