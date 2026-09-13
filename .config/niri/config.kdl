@@ -229,7 +229,7 @@ binds {
     Alt+Print  hotkey-overlay-title="Screenshot (Window)" { screenshot-window; }
 
     Mod+P       hotkey-overlay-title="Pick window" { spawn "ghostty" "--class=dot.floating.ghostty" "-e" "sh" "-c" "printf 'Pick a window...\n\n'; niri msg pick-window; niri msg action focus-window-previous; printf '\nDone! Press CTRL+c to quit\n'; read"; }
-    Mod+Shift+P hotkey-overlay-title="Pick color" { spawn-sh "killall hyprpicker || hyprpicker --autocopy --lowercase-hex"; }
+    Mod+Shift+P hotkey-overlay-title="Pick color" { spawn-sh "killall hyprpicker || hyprpicker --autocopy --format=hex"; }
 
     // Notifications.
     Mod+N            hotkey-overlay-title="Show last notification" { spawn "makoctl" "restore"; }

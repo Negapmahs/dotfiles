@@ -1,9 +1,7 @@
 font-family = Mononoki Nerd Font Mono
 cursor-style = block_hollow
 cursor-style-blink = true
-mouse-hide-while-typing = true
 theme = Kanagawa Dragon
-window-decoration = server
 clipboard-write = allow
 shell-integration = zsh
 confirm-close-surface = false
