@@ -120,8 +120,6 @@ overview {
     // Zoom factor applied to workspaces and windows in overview mode.
     zoom 0.6
 
-    // backdrop-color
-
     workspace-shadow {
         // Disable workspace shadows in overview.
         off
