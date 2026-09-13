@@ -24,7 +24,6 @@ input {
         // Enable numlock on startup.
         numlock
 
-        // A fairly fast repeat rate and delay.
         repeat-delay 200
         repeat-rate 35
     }
@@ -47,7 +46,6 @@ input {
         accel-profile "flat"
     }
 
-    // Focuses windows and outputs automatically when moving the mouse into them.
     focus-follows-mouse
 
     mod-key "Super"
@@ -60,26 +58,21 @@ input {
 
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
-    // Sets gaps around windows in logical pixels.
     gaps 10
 
-    // Never centre columns when changing focus.
     center-focused-column "never"
 
     // Sets the default column display to stacked windows.
     default-column-display "normal"
 
-    // Sets the column widths that (Mod+R) toggles between.
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
 
-    // Sets the default width of new windows.
     default-column-width { proportion 0.5; }
 
-    // Sets the window heights that (Mod+Shift+R) toggles between.
     preset-window-heights {
         proportion 0.33333
         proportion 0.5
@@ -88,13 +81,8 @@ layout {
     }
 
     focus-ring {
-        // How many logical pixels the ring extends out from the windows.
         width 2
-
-        // Color of the ring on the active monitor.
         active-color "#a292a3"
-
-        // Color of the ring on inactive monitors.
         inactive-color "#505050"
     }
 }
@@ -117,7 +105,6 @@ cursor {
 }
 
 overview {
-    // Zoom factor applied to workspaces and windows in overview mode.
     zoom 0.6
 
     workspace-shadow {
@@ -132,10 +119,7 @@ clipboard {
 }
 
 hotkey-overlay {
-    // Prevents showing of important hotkey overlay on niri startup.
     skip-at-startup
-
-    // Hides unbound important hotkeys.
     hide-not-bound
 }
 
@@ -159,7 +143,6 @@ window-rule {
     clip-to-geometry true
 }
 
-// Various window rules
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
 
