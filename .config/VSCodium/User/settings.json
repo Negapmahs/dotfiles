@@ -4,6 +4,7 @@
     "editor.fontFamily": "'Mononoki Nerd Font Mono', monospace",
 
     "editor.unicodeHighlight.nonBasicASCII": false,
+    
     "editor.wrappingIndent": "indent",
     
     // Treat LaTeX package (.sty) and class (.cls) files as LaTeX files.
