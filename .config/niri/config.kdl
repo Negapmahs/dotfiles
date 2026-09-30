@@ -249,7 +249,9 @@ binds {
     Mod+B            hotkey-overlay-title="Browser" { spawn "firefox"; }
 
     // OBS Controls via obsws-cli
-    
+    Mod+Alt+Backslash repeat=false { spawn "~/.local/bin/obsws-cli" "record" "toggle"; }
+    Mod+Shift+Backslash repeat=false { spawn "~/.local/bin/obsws-cli" "replaybuffer" "toggle"; }
+    Mod+Backslash repeat=false { spawn "~/.local/bin/obsws-cli" "replaybuffer" "save"; }
 
     // Window and Column Behaviour
     Mod+Q repeat=false hotkey-overlay-title="Close window" { close-window; }
