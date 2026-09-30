@@ -150,6 +150,12 @@ window-rule {
 }
 
 window-rule {
+    match app-id="KeePassXC"
+
+    block-out-from "screencast"
+}
+
+window-rule {
     match app-id=r#"^dot\.floating\.ghostty$"#
     match app-id=r#"^dot\.floating\.thunar$"#
     match app-id="xdg-desktop-portal-gtk"
@@ -241,6 +247,9 @@ binds {
     Mod+Shift+E      hotkey-overlay-title="File manager (floating)" { spawn "thunar" "--name=dot.floating.thunar"; }
     Mod+Alt+P        hotkey-overlay-title="Passwords" { spawn "keepassxc"; }
     Mod+B            hotkey-overlay-title="Browser" { spawn "firefox"; }
+
+    // OBS Controls via obsws-cli
+    
 
     // Window and Column Behaviour
     Mod+Q repeat=false hotkey-overlay-title="Close window" { close-window; }
